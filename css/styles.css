@@ -1,12 +1,12 @@
 /* Hero Section */
 .hero {
     height: 80vh; /* fill most of the screen */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* center content vertically */
-    align-items: center; /* center content horizontally */
+    display: flex; /* top to bottom */
+    flex-direction: column; /* stack items vertically */
+    justify-content: center; /* Center vertically on main axis */
+    align-items: center; /* Center horizontally on cross axis */
     text-align: center; /* center text */
-    background: #e3f2fd; /* light teal background */
+    background: #e3f2fd; /* Center text inside elements */
 }
 
 .hero h2 {
