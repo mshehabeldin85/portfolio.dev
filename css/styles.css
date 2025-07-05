@@ -1,17 +1,47 @@
-/* Reset default body margin */
-body {
-  margin: 0;
-  padding: 0; /* Optional, most browsers don't add body padding but safe to reset */
-  font-family: Arial, sans-serif; /* optional: apply a clean default font */
-  background-color: #fff; /* optional: clean background */
-  color: #333; /* optional: default text color */
-}
+/* ===== Global CSS Reset ===== */
 
 /* Reset box-sizing for all elements */
 *, *::before, *::after {
     box-sizing: border-box; /* ensures padding and border are included in element's total width and height */
 }
 
+/* Remove default margins */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol */
+ul, ol {
+    list-style: none;
+}
+
+/* Set a consistent line height and font smoothing */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, sans-serif; /* optional: apply a clean default font */
+    background-color: #fff; /* optional: clean background */
+    color: #333; /* optional: default text color */
+}
+
+/* Make images easier to work with */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove anchor underline and inherit color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ===== Custom CSS Styles ===== */
 
 /* Reusable button style */
 .btn {
