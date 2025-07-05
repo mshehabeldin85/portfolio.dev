@@ -7,8 +7,9 @@ body {
   color: #333; /* optional: default text color */
 }
 
+/* Reset box-sizing for all elements */
 *, *::before, *::after {
-    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    box-sizing: border-box; /* ensures padding and border are included in element's total width and height */
 }
 
 
