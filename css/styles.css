@@ -57,6 +57,7 @@ a {
   color: inherit;
 }
 
+
 /* ===== Custom CSS Styles ===== */
 
 /* Reusable button style */
@@ -77,6 +78,9 @@ a {
   background-color: #0d47a1;
   transform: translateY(-2px);
 }
+
+
+/* ===== Home CSS Styles (index.html) ===== */
 
 /* Hero Section */
 .hero {
@@ -163,4 +167,40 @@ a {
 .project-card .btn {
   margin-top: 1rem; /* margin for spacing */
   align-self: flex-end; /* align button to the right */
+}
+
+
+/* ===== DevConnect CSS Styles (devconnect.html) ===== */
+
+.project-detail {
+    padding: 4rem 1rem;
+}
+
+.projec-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1565c0;;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tech-list {
+    margin-bottom: 2rem;
+    padding-left: 1.2rem;
+}
+
+.tech-list li {
+    margin-bottom: 0.5rem;
+    list-style: disc;
 }
