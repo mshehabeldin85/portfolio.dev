@@ -10,10 +10,10 @@
       <section class="hero">
         <h2>Hi, I'm Mahmoud Shehabeldin</h2>
         <p>I build modern web applications using ASP.NET, React, and more.</p>
-        <a href="#" class="btn">View My Work</a>
+        <a href="#projects" class="btn">View My Work</a>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <h2>Projects</h2>
 
@@ -57,5 +57,26 @@
         </div>
       </section>
     </main>
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+      // Show/hide button on scroll
+      window.addEventListener("scroll", () => {
+        const scrollBtn = document.querySelector(".back-to-top");
+        if (window.scrollY > 300) {
+          scrollBtn.classList.add("show");
+        } else {
+          scrollBtn.classList.remove("show");
+        }
+      });
+
+      // Scroll to top when clicked
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </body>
 </html>

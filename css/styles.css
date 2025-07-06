@@ -1,5 +1,10 @@
 /* ===== Global CSS Reset ===== */
 
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset box-sizing for all elements */
 *,
 *::before,
@@ -57,7 +62,6 @@ a {
   color: inherit;
 }
 
-
 /* ===== Custom CSS Styles ===== */
 
 /* Reusable button style */
@@ -78,7 +82,6 @@ a {
   background-color: #0d47a1;
   transform: translateY(-2px);
 }
-
 
 /* ===== Home CSS Styles (index.html) ===== */
 
@@ -169,38 +172,67 @@ a {
   align-self: flex-end; /* align button to the right */
 }
 
+/* Back to Top Button */
+.back-to-top {
+  width: 50px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #1565c0;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  z-index: 1000;
+}
 
-/* ===== DevConnect CSS Styles (devconnect.html) ===== */
+.back-to-top:hover {
+  background-color: #0d47a1;
+  transform: translateY(-3px);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== Project Details pages CSS Styles ===== */
 
 .project-detail {
-    padding: 4rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .projec-detail h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1565c0;;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1565c0;
 }
 
 .project-subtitle {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 2rem;;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
 .project-image {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tech-list {
-    margin-bottom: 2rem;
-    padding-left: 1.2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.2rem;
 }
 
 .tech-list li {
-    margin-bottom: 0.5rem;
-    list-style: disc;
+  margin-bottom: 0.5rem;
+  list-style: disc;
 }
